@@ -1,0 +1,222 @@
+.attribution { font-size: 11px;
+               text-align: center;
+               color: white;
+               position: sticky;
+               scroll-padding-bottom: -10px;
+           
+     }
+.att { color: hsl(178, 100%, 50%); }
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+   max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(217, 54%, 11%);
+    position: relative;
+}
+.container {
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   
+}
+.card{
+    width: 350px;
+    height: 600px;
+    margin: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.cardContent{
+    margin: auto;
+    max-width: 300px;
+    max-height: 550px;
+  position: relative;
+  z-index: 50;
+}
+
+.equilibrium{
+    width: 100%;
+    position: relative;
+}
+
+.equilibrium img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgb(0, 255, 247, 0.5);
+    position: absolute; 
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    font-family: 'Outfit', sans-serif;
+    font-size:1.4em ;
+    margin-top: 23px;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s ease;
+}
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.info{
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+p{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.flexA{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: -15px;
+padding-bottom: 7px;
+border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.flexA1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.flexA1 p{
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    font-weight:300;
+}
+
+.flexA2{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexA2 p{
+    font-weight:300;
+    color: hsl(215, 51%, 70%);
+}
+
+.flexB{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: -37px ;
+    padding-top: 0px;
+}
+.flexB img{
+    transform: scale(0.25);
+    border: 3px solid white;
+    margin-left: -53px;
+    border-radius: 50%;
+}
+.creation{
+    display: flex;
+    margin-left: -50px;
+    gap: 2px;
+}
+.flexB p{
+    word-spacing: 1.8px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+.flexB .pp{
+    color: hsl(0, 0%, 100%);
+    transition: 0.5 ease;
+}
+.pp:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 376px){
+  h1{
+       margin-top: 24px;
+    }
+
+    .info{
+        line-height: 25px;
+    }
+   
+    .flexA{
+       
+       
+        margin-top: -10px;
+    }
+    
+    .flexA1 p{
+        font-size: 15px;
+    }
+  /* ==================================== */
+
+    .flexB{
+        margin-top: -34px ;  
+    }
+   
+    .flexB img{
+       
+        margin-left: -50px;
+    }
+  
+    .flexB p{
+      word-spacing: 2px;
+      font-weight: 600;
+    }
+   
+    
+}
+
+.logo77iu{
+    color: red;
+    font-weight: 900;
+	padding: 5px 10px;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: lightseagreen;
+	border-radius:50%;
+	border: 1px solid rgba(255, 255, 255, 0.447);
+	animation: logo_a 2s linear alternate infinite;
+    font-family: sans-serif;
+
+}
+@keyframes logo_a{
+	0%{background-color: lightseagreen;}
+	100%{background-color: white;}
+}
